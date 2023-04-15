@@ -1,3 +1,4 @@
+package Triangle.src;
 
 import java.util.Scanner;
 public class triangle {
