@@ -1,5 +1,3 @@
-
-import javax.sound.midi.SysexMessage;
 import javax.swing.JOptionPane;
 
 public class ShowTwoNumbers {
