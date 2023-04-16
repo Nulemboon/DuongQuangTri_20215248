@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 import java.util.Scanner;
 public class sorting {
     public static void main (String[] args) {
@@ -13,23 +13,10 @@ public class sorting {
             sum += arr[i];
         }
 
-        for (int i = 0; i < n - 1; i++) {
-            boolean flag = true;
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j+ 1]) {
-                    flag = false;
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
-            }
-            if (flag) break;
-        }
-        System.out.println("Sorted array: ");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println("\nSum of array = " + sum);
+        Arrays.sort(arr);
+        System.out.println("Sorted array: " + Arrays.toString(arr));
+        
+        System.out.println("Sum of array = " + sum);
         System.out.println("Average value of array = " + (double)sum/n);
 
         sc.close();
