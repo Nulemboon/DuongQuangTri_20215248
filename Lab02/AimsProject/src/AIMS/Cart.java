@@ -4,15 +4,21 @@ public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
     private int qtyOrdered;
-    
+
+    public int getQtyOrdered() {
+        return qtyOrdered;
+    }
+
     public void addDigitalVideoDisc(DigitalVideoDisc disc) {
         if (qtyOrdered < 20) {
             itemsOrdered[qtyOrdered] = disc;
             qtyOrdered++;
+            System.out.println("The disc has been added");
             if (qtyOrdered == 19) {
                 System.out.println("The cart is almost full");
+            } else if (qtyOrdered == 20) {
+                System.out.println("The cart is full");
             }
-            System.out.println("The disc has been added");
         } else {
             System.out.println("Cannot add! The cart is full");
         }
