@@ -67,6 +67,9 @@ public class DigitalVideoDisc {
         this.id = nbDigitalVideoDisc;
     }
 
+    public boolean isMatch(String title) {
+        return this.title.contains(title);
+    }
     @Override
     public int hashCode() {
         return Objects.hash(title, category, director, length, cost);

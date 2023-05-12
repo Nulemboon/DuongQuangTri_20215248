@@ -77,7 +77,7 @@ public class Cart {
     public void searchCart(String title) {
         int flag = 0;
         for (int i = 0; i < qtyOrdered; i++) {
-            if (itemsOrdered[i].getTitle().equals(title)) {
+            if (itemsOrdered[i].isMatch(title)) {
                 flag++;
                 System.out.println("Search result: " + itemsOrdered[i].toString());
             }

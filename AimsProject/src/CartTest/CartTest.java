@@ -22,7 +22,7 @@ public class CartTest {
         //test search method
         cart.searchCart(4);
 
-        cart.searchCart("The Lion King");
+        cart.searchCart("in");
 
     }
 }
