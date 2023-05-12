@@ -17,7 +17,7 @@ public class Aims {
         anOrder.removeDigitalVideoDisc(new DigitalVideoDisc("Aladin", "Animation", 18.99f));
         System.out.println("number of items in cart: " + anOrder.qtyOrdered);
 
-
+        System.out.println(DigitalVideoDisc.getNbDigitalVideoDisc());
         System.out.println("The total cost is: " + anOrder.totalCost());
     }
 }
