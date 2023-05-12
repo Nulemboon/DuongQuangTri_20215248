@@ -1,4 +1,4 @@
-package AIMS;
+package DigitalVideoDisc;
 
 import java.util.Objects;
 

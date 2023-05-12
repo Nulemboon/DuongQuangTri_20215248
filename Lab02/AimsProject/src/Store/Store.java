@@ -1,6 +1,5 @@
-package AIMS;
-
-
+package Store;
+import DigitalVideoDisc.DigitalVideoDisc;
 import java.util.ArrayList;
 
 public class Store {
