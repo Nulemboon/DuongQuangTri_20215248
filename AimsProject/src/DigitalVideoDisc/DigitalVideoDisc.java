@@ -67,6 +67,9 @@ public class DigitalVideoDisc {
         this.id = nbDigitalVideoDisc;
     }
 
+    public boolean isMatch(String title) {
+        return this.title.contains(title);
+    }
     @Override
     public int hashCode() {
         return Objects.hash(title, category, director, length, cost);
@@ -75,8 +78,7 @@ public class DigitalVideoDisc {
     @Override
     public String toString() {
         return id + ". DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + "$";
-    }   
-
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
