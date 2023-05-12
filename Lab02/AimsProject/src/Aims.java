@@ -1,5 +1,3 @@
-package AIMS;
-
 public class Aims {
     public static void main (String[] args) {
         Cart anOrder = new Cart();
@@ -13,7 +11,7 @@ public class Aims {
         anOrder.addDigitalVideoDisc(dvd3);
         System.out.println("number of items in cart: " + anOrder.qtyOrdered);
 
-        anOrder.removeDigitalVideoDisc(dvd3);
+        anOrder.removeDigitalVideoDisc(new DigitalVideoDisc("Aladin", "Animation", 18.99f));
         System.out.println("number of items in cart: " + anOrder.qtyOrdered);
 
         DigitalVideoDisc dvd4 = new DigitalVideoDisc("Aladin", "Animation", 19f);
