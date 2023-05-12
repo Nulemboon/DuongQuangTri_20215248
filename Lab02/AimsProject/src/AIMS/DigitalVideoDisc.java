@@ -36,23 +36,23 @@ public class DigitalVideoDisc {
     }
     public DigitalVideoDisc(String title) {
         this.title = title;
-        this.id = nbDigitalVideoDisc;
         nbDigitalVideoDisc++;
+        this.id = nbDigitalVideoDisc;
     }
     public DigitalVideoDisc(String title, String category, float cost) {
         this.title = title;
         this.category = category;
         this.cost = cost;
-        this.id = nbDigitalVideoDisc;
         nbDigitalVideoDisc++;
+        this.id = nbDigitalVideoDisc;
     }
     public DigitalVideoDisc(String title, String category, String director, float cost) {
         this.title = title;
         this.category = category;
         this.director = director;
         this.cost = cost;
-        this.id = nbDigitalVideoDisc;
         nbDigitalVideoDisc++;
+        this.id = nbDigitalVideoDisc;
     }
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
         this.title = title;
@@ -60,13 +60,18 @@ public class DigitalVideoDisc {
         this.director = director;
         this.length = length;
         this.cost = cost;
-        this.id = nbDigitalVideoDisc;
         nbDigitalVideoDisc++;
+        this.id = nbDigitalVideoDisc;
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(title, category, director, length, cost);
+    }
+
+    @Override
+    public String toString() {
+        return id + ". DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + "$";
     }
 
     @Override
