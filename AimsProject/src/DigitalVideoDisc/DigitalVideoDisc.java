@@ -75,7 +75,7 @@ public class DigitalVideoDisc {
     @Override
     public String toString() {
         return id + ". DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + "$";
-    }
+    }   
 
     @Override
     public boolean equals(Object o) {
