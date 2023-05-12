@@ -1,0 +1,14 @@
+1/ What happens if users choose "Cancel"?
+
+It shows a message dialog: "You've chosen: No".
+
+2/ How to customize the options to users?
+
+We can customize the options using showOptionDialog();
+
+For example, the dialog contains "I do" and "I don't" options:
+    String[] options = new String[2];
+    options[0] = "I do";
+    options[1] = "I don't";
+    int opt = JOptionPane.showOptionDialog(null, "Do you want to change to the first class ticket?", null, 0, JOptionPane.INFORMATION_MESSAGE, null, options, null);
+    JOptionPane.showMessageDialog(null, "You've chosen: " + (opt == JOptionPane.YES_OPTION? "I do" : "I don't"));
