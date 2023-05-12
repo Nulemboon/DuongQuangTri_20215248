@@ -16,5 +16,10 @@ public class CartTest {
         //test print method
         cart.printCart();
 
+        //test search method
+        cart.searchCart(4);
+
+        cart.searchCart("The Lion King");
+
     }
 }

@@ -14,6 +14,9 @@ public class DigitalVideoDisc {
     public static int getNbDigitalVideoDisc() {
         return nbDigitalVideoDisc;
     }
+    public int getId() {
+        return id;
+    }
     public String getTitle() {
         return title;
     }
