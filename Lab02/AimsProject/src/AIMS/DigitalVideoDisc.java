@@ -1,5 +1,7 @@
 package AIMS;
 
+import java.util.Objects;
+
 public class DigitalVideoDisc {
     private String title;
     private String category;
@@ -42,5 +44,17 @@ public class DigitalVideoDisc {
         this.length = length;
         this.cost = cost;
     }
-    
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, category, director, length, cost);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DigitalVideoDisc that = (DigitalVideoDisc) o;
+        return length == that.length && Float.compare(that.cost, cost) == 0 && Objects.equals(title, that.title) && Objects.equals(category, that.category) && Objects.equals(director, that.director);
+    }
 }
