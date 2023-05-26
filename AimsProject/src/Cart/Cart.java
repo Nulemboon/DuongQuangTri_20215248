@@ -1,5 +1,5 @@
 package Cart;
-import DigitalVideoDisc.DigitalVideoDisc;
+import Media.DigitalVideoDisc;
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];

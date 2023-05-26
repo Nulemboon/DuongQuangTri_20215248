@@ -1,5 +1,5 @@
 package Store;
-import DigitalVideoDisc.DigitalVideoDisc;
+import Media.DigitalVideoDisc;
 import java.util.ArrayList;
 
 public class Store {

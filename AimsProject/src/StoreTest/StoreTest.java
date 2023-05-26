@@ -1,7 +1,7 @@
 package StoreTest;
 
 import Store.Store;
-import DigitalVideoDisc.DigitalVideoDisc;
+import Media.DigitalVideoDisc;
 
 public class StoreTest {
     public static void main(String[] args) {
