@@ -1,6 +1,7 @@
 package Cart;
 import Media.Media;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Cart {
@@ -20,7 +21,7 @@ public class Cart {
             System.out.println("Cannot add! The cart is full");
         }
     }
-    public void addMedia(Media[] mediaList) {
+    public void addMedia(ArrayList<Media> mediaList) {
         for (Media media : mediaList) {
             addMedia(media);
         }

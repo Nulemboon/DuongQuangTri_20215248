@@ -1,6 +1,7 @@
 package Media;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class CompactDisc extends Disc implements Playable{
     private String artist;
@@ -56,5 +57,23 @@ public class CompactDisc extends Disc implements Playable{
                 throw new RuntimeException(e);
             }
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CompactDisc that)) return false;
+        if (!super.equals(o)) return false;
+        return Objects.equals(artist, that.artist) && Objects.equals(tracks, that.tracks);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), artist, tracks);
+    }
+
+    @Override
+    public String toString() {
+        return this.getId() + ". CD - " + this.getTitle() + " - " + this.getCategory() + " - " + this.getDirector() + " - " + this.getLength() + ": " + this.getCost() + "$";
     }
 }

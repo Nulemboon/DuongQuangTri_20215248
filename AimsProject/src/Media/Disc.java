@@ -25,4 +25,11 @@ public class Disc extends Media{
         this.length = length;
         this.director = director;
     }
+
+    public String toString() {
+        return "Disc{" +
+                "length=" + length +
+                ", director='" + director + '\'' +
+                '}';
+    }
 }
