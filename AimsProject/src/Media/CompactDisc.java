@@ -2,16 +2,12 @@ package Media;
 
 import java.util.ArrayList;
 
-public class CompactDisc extends Disc{
+public class CompactDisc extends Disc implements Playable{
     private String artist;
     private ArrayList<Track> tracks = new ArrayList<Track>();
 
     public String getArtist() {
         return artist;
-    }
-
-    public CompactDisc() {
-
     }
 
     public CompactDisc(String title, String category, float cost, String artist) {
@@ -42,5 +38,23 @@ public class CompactDisc extends Disc{
             sum += track.getLength();
         }
         return sum;
+    }
+
+    public void play() {
+        for (Track track : tracks) {
+            for (int i = 0; i < tracks.size(); i++) {
+                if (i == tracks.indexOf(track)) {
+                    System.out.print("\t");
+                    tracks.get(i).play();
+                }else {
+                    System.out.println((i+1) + ". " + tracks.get(i).getTitle() + " (" + tracks.get(i).getLength() + ")");
+                }
+            }
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 }
