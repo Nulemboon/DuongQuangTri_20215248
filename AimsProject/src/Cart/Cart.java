@@ -6,16 +6,14 @@ import java.util.ArrayList;
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private ArrayList<Media> itemsOrdered = new ArrayList<Media>(MAX_NUMBERS_ORDERED);
-    int qtyOrdered = 0;
 
     public void addMedia(Media media) {
-        if (qtyOrdered < 20) {
+        if (itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
             itemsOrdered.add(media);
-            qtyOrdered++;
             System.out.println("Item has been added");
-            if (qtyOrdered == 19) {
+            if (itemsOrdered.size() == 19) {
                 System.out.println("The cart is almost full");
-            } else if (qtyOrdered == 20) {
+            } else if (itemsOrdered.size() == 20) {
                 System.out.println("The cart is full");
             }
         } else {
@@ -32,8 +30,8 @@ public class Cart {
         addMedia(media2);
     }
     public void removeMedia(Media media) {
-        if (qtyOrdered == 0) return;
-        if (itemsOrdered.indexOf(media) != -1) {
+        if (itemsOrdered.size() == 0) return;
+        if (itemsOrdered.contains(media)) {
             itemsOrdered.remove(media);
             System.out.println("Item has been removed");
         } else System.out.println("Item is not in your cart");
@@ -41,7 +39,7 @@ public class Cart {
     }
     public float totalCost() {
         float total = 0;
-        for (int i = 0; i < qtyOrdered; i++) {
+        for (int i = 0; i < itemsOrdered.size(); i++) {
             total += itemsOrdered.get(i).getCost();
         }
         return total;
@@ -49,7 +47,7 @@ public class Cart {
 
     public void printCart() {
         System.out.println("********************CART********************");
-        for (int i = 0; i < qtyOrdered; i++) {
+        for (int i = 0; i < itemsOrdered.size(); i++) {
             System.out.println(itemsOrdered.get(i).toString());
         }
         System.out.println("Total cost: " + this.totalCost());
@@ -57,7 +55,7 @@ public class Cart {
     }
 
     public void searchCart(int id) {
-        for (int i = 0; i < qtyOrdered; i++) {
+        for (int i = 0; i < itemsOrdered.size(); i++) {
             if (id == itemsOrdered.get(i).getId()) {
                 System.out.println("Search result: " + itemsOrdered.get(i).toString());
                 return;
@@ -68,7 +66,7 @@ public class Cart {
 
     public void searchCart(String title) {
         int flag = 0;
-        for (int i = 0; i < qtyOrdered; i++) {
+        for (int i = 0; i < itemsOrdered.size(); i++) {
             if (itemsOrdered.get(i).isMatch(title)) {
                 flag++;
                 System.out.println("Search result: " + itemsOrdered.get(i).toString());

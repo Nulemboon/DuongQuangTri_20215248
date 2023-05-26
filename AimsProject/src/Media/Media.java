@@ -1,5 +1,7 @@
 package Media;
 
+import java.util.Objects;
+
 public abstract class Media {
     private int id;
     private String title, category;
@@ -49,5 +51,17 @@ public abstract class Media {
 
     public boolean isMatch(String title) {
         return this.getTitle().contains(title);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Media media)) return false;
+        return Objects.equals(title, media.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title);
     }
 }
