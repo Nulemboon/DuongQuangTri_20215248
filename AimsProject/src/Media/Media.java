@@ -46,4 +46,8 @@ public abstract class Media {
         this.category = category;
         this.cost = cost;
     }
+
+    public boolean isMatch(String title) {
+        return this.getTitle().contains(title);
+    }
 }

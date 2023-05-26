@@ -1,23 +1,23 @@
 package Store;
-import Media.DigitalVideoDisc;
+import Media.Media;
 import java.util.ArrayList;
 
 public class Store {
-    private ArrayList<DigitalVideoDisc> itemInStore = new ArrayList<DigitalVideoDisc>();
+    private ArrayList<Media> itemInStore = new ArrayList<Media>();
 
-    public void addDVD(DigitalVideoDisc disc) {
-        itemInStore.add(disc);
-        System.out.println("DVD added");
+    public void addMedia(Media media) {
+        itemInStore.add(media);
+        System.out.println("Item added");
     }
 
-    public void removeDVD(DigitalVideoDisc disc) {
+    public void removeMedia(Media media) {
         for (int i = 0; i < itemInStore.size(); i++) {
-            if (itemInStore.get(i).equals(disc)) {
+            if (itemInStore.get(i).equals(media)) {
                 itemInStore.remove(i);
-                System.out.println("DVD removed");
+                System.out.println("Item removed");
                 return;
             }
         }
-        System.out.println("DVD not available");
+        System.out.println("Item not available");
     }
 }

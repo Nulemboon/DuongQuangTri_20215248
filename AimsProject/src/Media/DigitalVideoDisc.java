@@ -29,9 +29,7 @@ public class DigitalVideoDisc extends Disc implements Playable{
     public void play() {
         System.out.println("Playing DVD: " + this.getTitle());
     }
-    public boolean isMatch(String title) {
-        return this.getTitle().contains(title);
-    }
+
     @Override
     public int hashCode() {
         return Objects.hash(getTitle(), getCategory(), getDirector(), getLength(), getCost());
@@ -46,6 +44,6 @@ public class DigitalVideoDisc extends Disc implements Playable{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         DigitalVideoDisc that = (DigitalVideoDisc) o;
-        return this.getLength() == that.getLength() && Float.compare(that.getCost(), this.getCost()) == 0 && Objects.equals(title, that.title) && Objects.equals(category, that.category) && Objects.equals(director, that.director);
+        return this.getLength() == that.getLength() && Float.compare(that.getCost(), this.getCost()) == 0 && Objects.equals(this.getTitle(), that.getTitle()) && Objects.equals(this.getCategory(), that.getCategory()) && Objects.equals(getDirector(), that.getDirector());
     }
 }
