@@ -10,13 +10,13 @@ public class Book extends Media {
     }
 
     public void addAuthor(String authorName) {
-        if (authors.indexOf(authorName) == -1) {
+        if (authors.contains(authorName)) {
             authors.add(authorName);
         }
     }
 
     public void removeAuthor(String authorName) {
-        if (authors.indexOf(authorName) != -1) {
+        if (authors.contains(authorName)) {
             authors.remove(authorName);
         }
     }

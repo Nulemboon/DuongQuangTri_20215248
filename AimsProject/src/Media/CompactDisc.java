@@ -21,13 +21,13 @@ public class CompactDisc extends Disc implements Playable{
     }
 
     public void addTrack(Track track) {
-        if (tracks.indexOf(track) == -1) {
+        if (tracks.contains(track)) {
             tracks.add(track);
         }
     }
 
     public void removeTrack(Track track) {
-        if (tracks.indexOf(track) != -1) {
+        if (tracks.contains(track)) {
             tracks.remove(track);
         }
     }

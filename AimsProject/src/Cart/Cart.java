@@ -24,7 +24,7 @@ public class Cart {
     }
     public void addMedia(Media[] mediaList) {
         for (Media media : mediaList) {
-            addDigitalVideoDisc(media);
+            addMedia(media);
         }
     }
     public void addMedia(Media media1, Media media2) {
@@ -69,9 +69,9 @@ public class Cart {
     public void searchCart(String title) {
         int flag = 0;
         for (int i = 0; i < qtyOrdered; i++) {
-            if (itemsOrdered[i].isMatch(title)) {
+            if (itemsOrdered.get(i).isMatch(title)) {
                 flag++;
-                System.out.println("Search result: " + itemsOrdered[i].toString());
+                System.out.println("Search result: " + itemsOrdered.get(i).toString());
             }
         }
         if (flag == 0) System.out.println("Search result: DVD title not available");
