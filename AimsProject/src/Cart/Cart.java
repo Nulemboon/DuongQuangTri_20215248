@@ -8,10 +8,15 @@ public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private ArrayList<Media> itemsOrdered = new ArrayList<Media>(MAX_NUMBERS_ORDERED);
 
+    public ArrayList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
+
     public void addMedia(Media media) {
         if (itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
             itemsOrdered.add(media);
             System.out.println("Item has been added");
+            System.out.println("Total number of items in cart: " + itemsOrdered.size());
             if (itemsOrdered.size() == 19) {
                 System.out.println("The cart is almost full");
             } else if (itemsOrdered.size() == 20) {
@@ -62,7 +67,7 @@ public class Cart {
                 return;
             }
         }
-        System.out.println("Search result: DVD id not available");
+        System.out.println("Search result: Media id not available");
     }
 
     public void searchCart(String title) {
@@ -73,6 +78,6 @@ public class Cart {
                 System.out.println("Search result: " + itemsOrdered.get(i).toString());
             }
         }
-        if (flag == 0) System.out.println("Search result: DVD title not available");
+        if (flag == 0) System.out.println("Search result: Media title not available");
     }
 }

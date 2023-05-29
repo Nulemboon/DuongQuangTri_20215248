@@ -6,6 +6,7 @@ import java.util.Objects;
 public abstract class Media {
     public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
     public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();
+    public static final Comparator<Media> COMPARE_BY_ID = new MediaComparatorById();
     private int id;
     private String title, category;
     private float cost;
@@ -52,8 +53,11 @@ public abstract class Media {
         this.cost = cost;
     }
 
+    public void play() {
+
+    }
     public boolean isMatch(String title) {
-        return this.getTitle().contains(title);
+        return this.getTitle().toLowerCase().contains(title.toLowerCase());
     }
 
     @Override
@@ -67,4 +71,5 @@ public abstract class Media {
     public int hashCode() {
         return Objects.hash(title);
     }
+
 }
