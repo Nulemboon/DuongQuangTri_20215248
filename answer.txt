@@ -1,2 +1,18 @@
-1.Is JAVA a Pass by Value or a Pass by Reference programming language?
-Java is always a pass-by-value programming language
+1. Which classes are aggregates of other classes? Checking all constructors of whole classes if they initialize for their parts? 
+Cart is an aggregate of Media. Store is an aggregate of Media. CompactDisc is an aggregate of Track.
+
+2.  If the passing object is not an instance of Media, what happens? 
+If the passing object is not an instance of Media, the equals() method will return false. (instanceof)
+
+3. Iterate through the list and print out the information of the media by using toString() method. Observe what happens and explain in detail.
+The code will print to screen the class type of Media m (DVD, CD, Book) + the hashcode of m.
+
+4. What class should implement the Comparable interface?
+Class Media should implement
+
+5. In those classes, how should you implement the compareTo()method be to reflect the ordering that we want? 
+Since the rule of compareTo() method is return negative for less than. 0 for equal and positive for larger than, we can change the code base on that rule for the order that we want
+
+6.Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach? 
+ No, since the Comparable interface can compare inside the class only and can only be implemented only by class Media.
+7. We can override the compareTo() method in DigitalVideoDisc class.
