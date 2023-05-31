@@ -161,7 +161,7 @@ public class Aims {
                     break;
                 }
                 case 2: {
-                    if (m instanceof  CompactDisc || m instanceof DigitalVideoDisc) {
+                    if (!(m instanceof Playable)) {
                         System.out.println("Invalid input!! Re-enter please");
                         continue;
                     }
@@ -281,7 +281,7 @@ public class Aims {
         Media m = inputTitle();
 
         if (m == null) return;
-        if (m instanceof  CompactDisc || m instanceof DigitalVideoDisc) {
+        if (m instanceof Playable) {
             m.play();
         } else {
             System.out.println("Media cannot be played!");
@@ -330,24 +330,25 @@ public class Aims {
                     int opt = sc.nextInt();
                     sc.nextLine();
 
-                    ArrayList<Media> list = cart.getItemsOrdered();
+
 
                     switch (opt) {
                         case 1: {
-                            Collections.sort(list, Media.COMPARE_BY_TITLE_COST);
+                            System.out.println("Input the item id: ");
+                            int id = sc.nextInt();
+                            sc.nextLine();
+                            cart.searchCart(id);
                             break;
                         }
                         case 2: {
-                            Collections.sort(list, Media.COMPARE_BY_ID);
+                            System.out.println("Input the item title: ");
+                            String title = sc.nextLine();
+                            cart.searchCart(title);
                             break;
                         }
                         default: {
                             System.out.println("Invalid input");
                         }
-
-                    }
-                    for (Media m : list) {
-                        System.out.println(m.toString());
                     }
                     break;
                 }
@@ -358,7 +359,7 @@ public class Aims {
 
                     System.out.println("1. Sort medias by title - cost");
 
-                    System.out.println("2. Filter medias by cost - title");
+                    System.out.println("2. Sort medias by cost - title");
 
                     System.out.println("--------------------------------");
 
@@ -403,7 +404,10 @@ public class Aims {
                     System.out.println("-----------------------------------\nChoose between: 1 - " + list.size());
                     int opt = sc.nextInt();
                     sc.nextLine();
-                    list.get(opt - 1).play();
+                    if (list.get(opt - 1) instanceof Playable) {
+                        list.get(opt - 1).play();
+                    }
+                    else System.out.println("Media cannot be played!");
                     break;
                 }
                 case 5: {

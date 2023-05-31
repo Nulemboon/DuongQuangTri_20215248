@@ -29,7 +29,7 @@ public class Store {
             if (itemInStore.get(i).isMatch(title)) {
                 flag++;
                 list.add(itemInStore.get(i));
-                System.out.println("Search result: " + itemInStore.get(i).toString());
+                System.out.println("Search result: " + flag + ", " + itemInStore.get(i).toString());
             }
         }
         if (flag == 0) System.out.println("Search result: Media title not available");
