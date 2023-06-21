@@ -5,6 +5,9 @@ import java.util.ArrayList;
 public class Store {
     private ArrayList<Media> itemInStore = new ArrayList<Media>();
 
+    public ArrayList<Media> getItemInStore() {
+        return itemInStore;
+    }
     public void addMedia(Media media) {
         itemInStore.add(media);
         System.out.println("Media added");

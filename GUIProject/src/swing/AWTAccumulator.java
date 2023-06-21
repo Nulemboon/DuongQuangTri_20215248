@@ -38,8 +38,7 @@ public class AWTAccumulator extends Frame {
 
         public void actionPerformed(ActionEvent evt) {
             int numberIn = Integer.parseInt(AWTAccumulator.this.tfInput.getText());
-            AWTAccumulator var10000 = AWTAccumulator.this;
-            var10000.sum += numberIn;
+            sum += numberIn;
             AWTAccumulator.this.tfInput.setText("");
             AWTAccumulator.this.tfOutput.setText("" + AWTAccumulator.this.sum);
         }

@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="lib:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc5d694b-a191-4477-80a3-d63f87a89d7e" name="Changes" comment="" />
+    <list default="true" id="dc5d694b-a191-4477-80a3-d63f87a89d7e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../AimsProject/AimsProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/AimsProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/src/Store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/src/Store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GUIProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/AWTAccumulator$TFInputListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/AWTAccumulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/NumberGrid$ButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/NumberGrid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/SwingAccumulator$TFInputListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/SwingAccumulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/swing/AWTAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/swing/AWTAccumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/swing/NumberGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/swing/NumberGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/swing/SwingAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/swing/SwingAccumulator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,20 +33,65 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2RGcZ6TaTmbjuvd4kXzRYkdcStw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/admin/OneDrive/Documents/tri_workspace/Java/OOP_lab/AimsProject",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pathVariables"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="javafx.Painter" />
+      <module name="GUIProject" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="javafx" type="JarApplication">
+      <option name="VM_PARAMETERS" value="--module-path &quot;\path\to\javafx-sdk-20\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\admin\OneDrive\Documents\tri_workspace\Java\OOP_lab\GUIProject" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.javafx" />
+      <item itemvalue="Remote JVM Debug.Unnamed" />
+    </list>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,5 +102,9 @@
       <updated>1686879913337</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -63,13 +63,11 @@ public class NumberGrid extends JFrame {
         public void actionPerformed(ActionEvent e) {
             String button = e.getActionCommand();
             if (button.charAt(0) >= '0' && button.charAt(0) <= '9') {
-                JTextField var10000 = NumberGrid.this.tfDisplay;
-                String var10001 = NumberGrid.this.tfDisplay.getText();
-                var10000.setText(var10001 + button);
+                tfDisplay.setText(tfDisplay.getText() + button);
             } else if (button.equals("DEL")) {
-                NumberGrid.this.tfDisplay.setText(NumberGrid.this.tfDisplay.getText().substring(0, NumberGrid.this.tfDisplay.getText().length() - 1));
+                tfDisplay.setText(tfDisplay.getText().substring(0, tfDisplay.getText().length() - 1));
             } else {
-                NumberGrid.this.tfDisplay.setText("");
+                tfDisplay.setText("");
             }
 
         }

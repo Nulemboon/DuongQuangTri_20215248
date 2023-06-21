@@ -1,14 +1,16 @@
 package Cart;
 import Media.Media;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
-    private ArrayList<Media> itemsOrdered = new ArrayList<Media>(MAX_NUMBERS_ORDERED);
+    private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
 
-    public ArrayList<Media> getItemsOrdered() {
+    public ObservableList<Media> getItemsOrdered() {
         return itemsOrdered;
     }
 
