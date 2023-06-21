@@ -62,24 +62,27 @@ public class Cart {
         System.out.println("********************************************");
     }
 
-    public void searchCart(int id) {
+    public boolean searchCart(int id) {
         for (int i = 0; i < itemsOrdered.size(); i++) {
             if (id == itemsOrdered.get(i).getId()) {
                 System.out.println("Search result: " + itemsOrdered.get(i).toString());
-                return;
+                return true;
             }
         }
         System.out.println("Search result: Media id not available");
+        return false;
     }
 
-    public void searchCart(String title) {
+    public boolean searchCart(String title) {
         int flag = 0;
         for (int i = 0; i < itemsOrdered.size(); i++) {
             if (itemsOrdered.get(i).isMatch(title)) {
                 flag++;
                 System.out.println("Search result: " + itemsOrdered.get(i).toString());
+                return true;
             }
         }
         if (flag == 0) System.out.println("Search result: Media title not available");
+        return false;
     }
 }
