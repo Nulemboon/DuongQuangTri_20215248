@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="20" project-jdk-type="JavaSDK">
+<<<<<<< HEAD
+    <output url="file://$USER_HOME$/OneDrive/Documents/tri_workspace/Java/OOP_lab/GUIProject/out" />
+=======
     <output url="file://$PROJECT_DIR$/out" />
+>>>>>>> 074e9f09341d245b02695f5b73775309403471ce
   </component>
 </project>

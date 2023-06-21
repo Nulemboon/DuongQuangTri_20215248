@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$USER_HOME$/OneDrive/Documents/tri_workspace/Java/OOP_lab/GUIProject/GUIProject.iml" filepath="$USER_HOME$/OneDrive/Documents/tri_workspace/Java/OOP_lab/GUIProject/GUIProject.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/GUIProject.iml" filepath="$PROJECT_DIR$/GUIProject.iml" />
+>>>>>>> 074e9f09341d245b02695f5b73775309403471ce
     </modules>
   </component>
 </project>
