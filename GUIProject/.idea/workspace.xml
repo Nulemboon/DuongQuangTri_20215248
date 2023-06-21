@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302e7537-2665-4773-8f29-4ff0d5f21e8e" name="Changes" comment="" />
+=======
+  <component name="ChangeListManager">
+    <list default="true" id="dc5d694b-a191-4477-80a3-d63f87a89d7e" name="Changes" comment="" />
+>>>>>>> 074e9f09341d245b02695f5b73775309403471ce
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +22,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -37,12 +43,16 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+=======
+  <component name="ProjectId" id="2RGcZ6TaTmbjuvd4kXzRYkdcStw" />
+>>>>>>> 074e9f09341d245b02695f5b73775309403471ce
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/admin/Documents/tri_workspace/Java/OOP_lab/GUIProject"
@@ -73,6 +83,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686875032771</updated>
+=======
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc5d694b-a191-4477-80a3-d63f87a89d7e" name="Changes" comment="" />
+      <created>1686879913337</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686879913337</updated>
+>>>>>>> 074e9f09341d245b02695f5b73775309403471ce
     </task>
     <servers />
   </component>
